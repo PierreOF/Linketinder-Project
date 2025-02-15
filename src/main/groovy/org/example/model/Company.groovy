@@ -7,7 +7,7 @@ class Company extends PersonImpl {
     String country
     List<String> skills
 
-    Company(String name, String email, String cnpj, String country, String state, String zipCode, String description, List<String> requiredSkills) {
+    Company(String name, String email, String cnpj, String country, String state, String zipCode, String description, List<String> skills) {
         super(name, email, state, zipCode, description)
         this.cnpj = cnpj
         this.country = country

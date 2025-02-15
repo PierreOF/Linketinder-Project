@@ -23,7 +23,6 @@ class Candidate extends PersonImpl {
         println "Skills: ${skills.join(', ')}"
     }
 
-    @Override
     String getCep() {
         return null
     }

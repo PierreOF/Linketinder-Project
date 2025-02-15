@@ -17,7 +17,6 @@ abstract class PersonImpl implements Person {
         this.description = description
     }
 
-    @Override
     void displayInfo() {
         println "Name: $name"
         println "Email: $email"
