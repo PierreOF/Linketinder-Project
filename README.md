@@ -2,7 +2,7 @@
 
 # Pré-requisitos
 
-- Groovy
+- Groovy (JDK 17)
 - Gradle
 - Sistema linux
 
