@@ -2,7 +2,7 @@
 
 # Pré-requisitos
 
-- Java 17 ou superior
+- Groovy
 - Gradle
 - Sistema linux
 
