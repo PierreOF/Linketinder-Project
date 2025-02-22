@@ -19,4 +19,16 @@ class CompanyRepository {
     List<Company> getCompanies() {
         return companies
     }
+
+    void addCompany(Company company) {
+        if (!companies.find { it.cnpj == company.cnpj }) {
+            companies.add(company)
+            println "Empresa ${company.name} cadastrada com sucesso!"
+        } else {
+            println "Erro: CNPJ ${company.cnpj} já cadastrado."
+        }
+    }
+
+
+
 }

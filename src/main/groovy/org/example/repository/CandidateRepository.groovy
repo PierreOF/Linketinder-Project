@@ -3,7 +3,6 @@ package org.example.repository
 import org.example.model.Candidate
 
 class CandidateRepository {
-
     List<Candidate> candidates = []
 
     CandidateRepository() {
@@ -16,7 +15,12 @@ class CandidateRepository {
         ])
     }
 
-    List<Candidate> getCandidates() {
-        return candidates
+    void addCandidate(Candidate candidate) {
+        if (!candidates.find { it.cpf == candidate.cpf }) {
+            candidates.add(candidate)
+            println "Candidato ${candidate.name} cadastrado com sucesso!"
+        } else {
+            println "Erro: CPF ${candidate.cpf} já cadastrado."
+        }
     }
 }
