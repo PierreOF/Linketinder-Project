@@ -1,8 +1,10 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-document.addEventListener("DOMContentLoaded", () => {
-    const app = document.getElementById("app");
-    if (app) {
-        app.innerHTML = "<h2>Frontend TypeScript Puro</h2>";
-    }
-});
+function navigate(page) {
+    import(`./${page}.js`)
+        .then(module => {
+        document.getElementById('content').innerHTML = module.default();
+    })
+        .catch(err => console.error("Erro ao carregar módulo:", err));
+}
+// expõe a função globalmente para ser acessível no HTML
+window.navigate = navigate;

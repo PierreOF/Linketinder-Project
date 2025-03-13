@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Perfil do Candidato</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <nav>
+    <a href="register-candidate.html">Cadastrar Candidato</a> |
+    <a href="register-company.html">Cadastrar Empresa</a> |
+    <a href="profile-candidate.html">Perfil do Candidato</a> |
+    <a href="profile-company.html">Perfil da Empresa</a>
+  </nav>
+  
+  <h1>Perfil do Candidato</h1>
+  <div id="profile-container">
+    <p><strong>Nome:</strong> <span id="nome"></span></p>
+    <p><strong>Email:</strong> <span id="email"></span></p>
+    <p><strong>Idade:</strong> <span id="idade"></span></p>
+    <p><strong>Estado:</strong> <span id="estado"></span></p>
+    <p><strong>Descrição:</strong> <span id="descricao"></span></p>
+    <p><strong>Competências:</strong> <span id="competencias"></span></p>
+  </div>
+  
+  <h2>Vagas Disponíveis</h2>
+  <table id="tabela-vagas">
+    <thead>
+      <tr>
+        <th>Empresa</th>
+        <th>Descrição</th>
+        <th>Requisitos</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- vagas aqui-->
+    </tbody>
+  </table>
+  
+  <script type="module" src="../dist/pages/profileCandidate.js"></script>
+</body>
+</html>

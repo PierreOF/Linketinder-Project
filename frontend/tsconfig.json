@@ -1,11 +1,12 @@
 {
   "compilerOptions": {
     "target": "ES6",
-    "module": "NodeNext",
+    "module": "ES6",
     "strict": true,
     "outDir": "./dist",
     "rootDir": "./src",
-    "moduleResolution": "Nodenext"
+    "moduleResolution": "node",
+    "esModuleInterop": true
   },
   "include": ["src"],
   "exclude": ["dist", "node_modules"]

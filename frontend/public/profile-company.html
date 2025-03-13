@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Perfil da Empresa</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <nav>
+    <a href="register-candidate.html">Cadastrar Candidato</a> |
+    <a href="register-company.html">Cadastrar Empresa</a> |
+    <a href="profile-candidate.html">Perfil do Candidato</a> |
+    <a href="profile-company.html">Perfil da Empresa</a>
+  </nav>
+  
+  <h1>Perfil da Empresa</h1>
+  <div id="profile-container">
+    <p><strong>Nome da Empresa:</strong> <span id="nome"></span></p>
+    <p><strong>Email:</strong> <span id="email"></span></p>
+    <p><strong>CNPJ:</strong> <span id="cnpj"></span></p>
+    <p><strong>Estado:</strong> <span id="estado"></span></p>
+    <p><strong>CEP:</strong> <span id="cep"></span></p>
+    <p><strong>Descrição:</strong> <span id="descricao"></span></p>
+  </div>
+  
+  <h2>Todos os candidatos</h2>
+  <table id="tabela-candidatos">
+    <thead>
+      <tr>
+        <th>Competências</th>
+        <th>Formação</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- candidatos -->
+    </tbody>
+  </table>
+  
+  <h2>Gráfico de Competências</h2>
+  <div>
+    <canvas id="myChart"></canvas>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  
+  <script type="module" src="../dist/pages/profileCompany.js"></script>
+</body>
+</html>

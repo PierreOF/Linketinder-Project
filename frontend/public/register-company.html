@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastro de Empresa</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <nav>
+    <a href="register-candidate.html">Cadastrar Candidato</a> |
+    <a href="register-company.html">Cadastrar Empresa</a> |
+    <a href="profile-candidate.html">Perfil do Candidato</a> |
+    <a href="profile-company.html">Perfil da Empresa</a>
+  </nav>
+  
+  <h1>Cadastro de Empresa</h1>
+  <form id="form-empresa">
+    <label>Nome da Empresa: <input type="text" id="nome" required /></label>
+    <label>E-mail: <input type="email" id="email" required /></label>
+    <label>CNPJ: <input type="text" id="cnpj" required /></label>
+    <label>Estado: <input type="text" id="estado" required /></label>
+    <label>CEP: <input type="text" id="cep" required /></label>
+    <label>Descrição: <textarea id="descricao"></textarea></label>
+    <button type="submit">Cadastrar</button>
+  </form>
+  <script type="module" src="../dist/pages/registerCompany.js"></script>
+</body>
+</html>

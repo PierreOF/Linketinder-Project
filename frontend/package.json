@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "lite-server --baseDir=public",
+    "start": "lite-server --config bs-config.json",
     "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -12,11 +12,15 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "@types/chart.js": "^2.9.41",
     "@types/node": "^22.13.10",
+    "@types/plotly.js": "^2.35.2",
     "lite-server": "^2.6.1",
     "typescript": "^5.8.2"
   },
   "dependencies": {
+    "chart.js": "^4.4.8",
+    "plotly.js-dist": "^3.0.1",
     "undici": "^7.4.0"
   }
 }
