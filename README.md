@@ -1,10 +1,18 @@
 ## (K1-T4) By Pierre Monteiro
 
+# Tecnologias usadas
+
+- Grooyv
+- TypeScript
+- Html
+- Css
+
 # Pré-requisitos
 
 - Groovy (JDK 17)
 - Gradle
 - Sistema linux
+- Node
 
 # Rodando o projeto
 
